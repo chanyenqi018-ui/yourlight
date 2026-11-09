@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Your Light · Get the app</title>
+<meta name="description" content="Your Light — one small step a day. Free on iPhone and Android. Choose App Store or Google Play.">
+<meta name="theme-color" content="#243568">
+<link rel="canonical" href="https://chanyenqi018-ui.github.io/yourlight/">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Your Light · Get the app">
+<meta property="og:description" content="One small step a day. Free on iPhone and Android.">
+<meta property="og:image" content="https://chanyenqi018-ui.github.io/yourlight/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://chanyenqi018-ui.github.io/yourlight/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Your Light · Get the app">
+<meta name="twitter:description" content="One small step a day. Free on iPhone and Android.">
+<meta name="twitter:image" content="https://chanyenqi018-ui.github.io/yourlight/assets/og.png">
+<style>
+  :root {
+    --navy: rgb(36, 53, 104);
+    --cream: rgb(246, 241, 232);
+    --peach: #E8B89A;
+    --ink: #18213A;
+    --mute: rgba(246, 241, 232, 0.72);
+    --card: rgba(246, 241, 232, 0.08);
+    --line: rgba(246, 241, 232, 0.18);
+    --highlight: rgba(232, 184, 154, 0.22);
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --serif: Georgia, "Times New Roman", Times, serif;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    min-height: 100dvh;
+    color: var(--cream);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+    background:
+      radial-gradient(680px 420px at 85% -40px, rgba(232, 184, 154, 0.22), transparent 70%),
+      radial-gradient(560px 480px at -10% 80%, rgba(246, 241, 232, 0.08), transparent 65%),
+      var(--navy);
+  }
+  main {
+    width: min(100%, 420px);
+    margin: 0 auto;
+    padding: calc(48px + env(safe-area-inset-top)) 24px calc(28px + env(safe-area-inset-bottom));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+  .icon {
+    width: 112px;
+    height: 112px;
+    border-radius: 28px;
+    object-fit: cover;
+    box-shadow:
+      0 0 0 1px rgba(246, 241, 232, 0.12),
+      0 18px 40px -16px rgba(0, 0, 0, 0.55);
+  }
+  h1 {
+    margin: 28px 0 0;
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 36px;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: var(--cream);
+  }
+  h1 em {
+    font-style: italic;
+    color: var(--peach);
+  }
+  .tag {
+    margin: 12px 0 0;
+    font-size: 16px;
+    line-height: 1.45;
+    color: var(--mute);
+    max-width: 26ch;
+  }
+  .stores {
+    width: 100%;
+    margin-top: 36px;
+    display: grid;
+    gap: 12px;
+  }
+  .btn {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    min-height: 64px;
+    padding: 12px 18px;
+    border-radius: 16px;
+    text-decoration: none;
+    color: var(--cream);
+    background: var(--card);
+    box-shadow: inset 0 0 0 1px var(--line);
+    transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn:hover,
+  .btn:focus-visible {
+    transform: translateY(-1px);
+    background: rgba(246, 241, 232, 0.12);
+    box-shadow: inset 0 0 0 1.5px rgba(246, 241, 232, 0.35);
+    outline: none;
+  }
+  .btn.match {
+    background: var(--highlight);
+    box-shadow: inset 0 0 0 1.5px rgba(232, 184, 154, 0.55);
+  }
+  .btn .badge {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    background: rgba(246, 241, 232, 0.1);
+    flex: none;
+  }
+  .btn .badge svg { width: 22px; height: 22px; display: block; }
+  .btn .copy { text-align: left; flex: 1; }
+  .btn .copy small {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--mute);
+    margin-bottom: 2px;
+  }
+  .btn .copy b {
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .hint {
+    margin: 10px 0 0;
+    min-height: 18px;
+    font-size: 12.5px;
+    color: rgba(246, 241, 232, 0.5);
+  }
+  footer {
+    margin-top: auto;
+    padding-top: 40px;
+    font-size: 12.5px;
+    color: rgba(246, 241, 232, 0.45);
+  }
+  footer a {
+    color: rgba(246, 241, 232, 0.65);
+    text-decoration: none;
+  }
+  footer a:hover { color: var(--cream); text-decoration: underline; }
+</style>
+</head>
+<body>
+<main>
+  <img class="icon" src="assets/icon-512.png" width="112" height="112" alt="Your Light app icon">
+  <h1>Your <em>Light</em></h1>
+  <p class="tag">One small step a day.</p>
+
+  <nav class="stores" aria-label="Download Your Light">
+    <a id="btn-ios" class="btn" href="https://apps.apple.com/app/id6811325600" rel="noopener">
+      <span class="badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M16.365 12.64c-.02-2.14 1.75-3.17 1.83-3.22-1-1.46-2.56-1.66-3.11-1.68-1.32-.13-2.58.78-3.25.78-.67 0-1.71-.76-2.81-.74-1.45.02-2.78.84-3.52 2.14-1.5 2.6-.38 6.45 1.08 8.56.71 1.03 1.56 2.19 2.67 2.15 1.07-.04 1.48-.69 2.78-.69 1.3 0 1.66.69 2.8.67 1.16-.02 1.89-1.05 2.59-2.09.82-1.19 1.16-2.34 1.18-2.4-.03-.01-2.25-.86-2.27-3.42zm-2.13-6.3c.58-.7.97-1.68.86-2.65-.83.03-1.84.55-2.43 1.25-.53.62-.99 1.62-.87 2.57.92.07 1.86-.47 2.44-1.17z"/></svg>
+      </span>
+      <span class="copy">
+        <small>iPhone</small>
+        <b>App Store</b>
+      </span>
+    </a>
+    <a id="btn-android" class="btn" href="https://play.google.com/store/apps/details?id=com.warrioryenqi.yourlight" rel="noopener">
+      <span class="badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#34A853" d="M4 3.2 13.6 12 4 20.8c-.3-.2-.5-.6-.5-1V4.2c0-.4.2-.8.5-1z"/><path fill="#FBBC04" d="m16.9 15.2-3.3-3.2 3.3-3.2 3.7 2.1c1 .6 1 1.6 0 2.2z"/><path fill="#EA4335" d="M13.6 12 4 20.8c.3.2.8.2 1.2 0l11.7-5.6z"/><path fill="#4285F4" d="M13.6 12 16.9 8.8 5.2 3.2C4.8 3 4.3 3 4 3.2z"/></svg>
+      </span>
+      <span class="copy">
+        <small>Android</small>
+        <b>Google Play</b>
+      </span>
+    </a>
+  </nav>
+  <p id="hint" class="hint" aria-live="polite"></p>
+
+  <footer>
+    Free on iPhone and Android ·
+    <a href="https://chanyenqi018-ui.github.io/your-light/support/">Support</a>
+  </footer>
+</main>
+<script>
+(function () {
+  var ua = navigator.userAgent || "";
+  var ios = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  var android = /Android/i.test(ua);
+  var hint = document.getElementById("hint");
+  if (ios) {
+    document.getElementById("btn-ios").classList.add("match");
+    hint.textContent = "Suggested for your iPhone";
+  } else if (android) {
+    document.getElementById("btn-android").classList.add("match");
+    hint.textContent = "Suggested for your Android phone";
+  }
+})();
+</script>
+</body>
+</html>
